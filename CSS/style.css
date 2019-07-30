@@ -1,0 +1,441 @@
+/*__________________________________General____________________*/
+
+body{
+    background-color: whitesmoke;
+    color: #555;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin:auto;
+    overflow: hidden;
+}
+
+.button{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+.button:hover{
+    background-color: whitesmoke;
+    color: #555;
+}
+
+/*__________________________________Home____________________*/
+
+#mainheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+#navbar{
+    background-color: rgb(39, 39, 39);
+    /*background-image: linear-gradient(to right, black, rgb(39, 39, 39));*/
+    color: whitesmoke;
+    text-align: left;
+}
+
+#navbar ul{
+    padding:0;
+    list-style: none;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 16px;
+    padding-right: 20px;
+}
+
+#showcase{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    min-height:300px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#showcase h1{
+    color: whitesmoke;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+#main{
+    float: left;
+    width: 70%;
+    padding:0 30px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background: #555;
+    color: whitesmoke;
+    padding:12px;
+    box-sizing: border-box;
+}
+
+/*__________________________________About____________________*/
+
+#aboutheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    margin-top: 50px;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+#aboutback{
+    background-image: url('../images/fencelight2.png');
+    background-position: top right;
+    color: whitesmoke;
+}
+
+#profile{
+    float: left;
+    width: 40%;
+    background: #555;
+    color: whitesmoke;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 40px;
+    line-height: 2em;
+    margin-bottom: 40px;
+}
+
+#profile h1{
+    text-align: center;
+    font-size: 30px;
+}
+
+#profile li{
+    font-size: 22px;
+    line-height: 3em;
+}
+
+#profilepic{
+    border-radius: 50%;
+    /*opacity: 0.5;*/
+    filter: grayscale(50%);
+    max-width: 95%;
+    height: auto;
+}   
+
+#CL{
+    float: right;
+    width: 60%;
+    padding:  30px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: whitesmoke;
+}
+
+#clbutton{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    border: whitesmoke;
+}
+
+#clbutton:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+/*__________________________________Resume____________________*/
+
+#resheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+.reshead{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 2px 30px;
+    margin-top: 40px;
+}
+
+.historyheader{
+    line-height: 5px;
+    padding-left:10px;
+    padding-top: 10px;
+}
+
+#resback{
+    background-image: url('../images/fencelight3.png');
+    background-position: top right;
+}
+
+#resbutton{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#resbutton:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+/*__________________________________References____________________*/
+
+#refheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+
+    padding: 50px 0;
+    font-size: 25px;
+
+    /*Flexbox references*/
+}
+#row1{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#ref1{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
+#ref2{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
+#ref3{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
+#row2{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+#ref4{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
+#ref5{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
+/*Float references
+
+.reference{
+    background: #555;
+    color: whitesmoke;
+    padding: 2px 20px;
+    /*margin-top: 30px;*//*
+    margin-bottom: 20px;
+}
+
+
+#ref1{
+    margin-top: 40px;
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#ref2{
+    margin-top: 40px;
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+    padding-bottom: 25px;
+}
+
+#ref3{
+    margin-top: 20px;
+    float: left;
+    width: 48%;
+    box-sizing: border-box;
+    padding-bottom: 27px;
+}
+
+#ref4{
+    margin-top: 20px;
+    float: right;
+    width: 48%;
+    box-sizing: border-box;
+}
+
+#ref5{
+    margin-top: 20px;
+}*/
+
+/*_________________________________Portfoilio_________________*/
+
+#portheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    margin-top: 50px;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+#porttext{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    line-height: 3em;
+}
+
+/*_________________________________Contact_________________*/
+
+#contactheader{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    margin-top: 50px;
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+#contacttext{
+    background: #555;
+    color: whitesmoke;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    line-height: 3em;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Sticky social media buttons*/
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    filter: grayscale(100%);
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    position: fixed;
+    top: 300px;
+}
+
+/* Twitter */
+.fa-linkedin {
+    background: #4875B4;
+    color: white;
+    position: fixed;
+    top:356px;
+}
+
+/*__________________________________Footer____________________*/
+
+#mainfooter{
+    background-image: url('../images/fence.png');
+    background-position: center right;
+    color: whitesmoke;
+    text-align: center;
+    padding:50px;
+    margin-top: 40px;
+}
+
+/*__________________________________Media____________________*/
+
+@media(max-width:600px){
+    #main{
+        width:100%;
+        float: none;
+    }
+    #sidebar{
+        width:100%;
+        float: none;
+    }
+    #CL{
+        width:100%;
+        float: none;  
+    }
+    #profile{
+        width:100%;
+        float: none;  
+    }
+
+    #ref1{
+        width:100%;
+        float: none;  
+    }
+
+    #ref2{
+        width:100%;
+        float: none;  
+    }
+
+    #ref3{
+        width:100%;
+        float: none;  
+    }
+
+    #ref4{
+        width:100%;
+        float: none;  
+    }
+}

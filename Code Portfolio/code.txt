@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main(void) {
+
+   int count = 1;
+   int num[5];
+   int rank[5];
+   
+   int i;
+   for(i=0;i<5;i++)
+   {
+      printf("Enter player %d's jersey number:\n",count);
+      scanf("%d",&num[i]);
+      printf("Enter player %d's rating:\n",count);
+      scanf("%d",&rank[i]);
+      count++;
+      printf("\n");
+   }
+   count = 1;
+   printf("ROSTER\n");
+   int j;
+   for(j=0;j<5;j++)
+   {
+      printf("Player %d -- Jersey number: %d, Rating: %d\n",count,num[j],rank[j]);
+      count++;
+   }
+   printf("\n");
+   //============================================MENU====================================================
+   char input;
+   while(input != 'q'){
+   printf("MENU\n");
+   printf("u - Update player rating\n");
+   printf("a - Output players above a rating\n");
+   printf("r - Replace player\n");
+   printf("o - Output roster\n");
+   printf("q - Quit\n");
+   printf("\n");
+   printf("Choose an option:\n");
+   scanf(" %c",&input);
+   
+   //============================Print Roster================================================================
+   if(input == 'o')
+   {
+        count = 1;
+      printf("ROSTER\n");
+      int k;
+      for(k=0;k<5;k++)
+      {
+         printf("Player %d -- Jersey number: %d, Rating: %d\n",count,num[k],rank[k]);
+         count++;
+      }
+      printf("\n");
+   }
+   //==================================update rating===============================================
+   else if(input == 'u')
+   {
+        printf("Enter a jersey number:\n");
+        int inum;
+        scanf("%d",&inum);
+        printf("Enter a new rating for player:\n");
+        int newrank;
+        scanf("%d",&newrank);
+        int h;
+        for(h=0;h<5;h++)
+        {
+            if(num[h] == inum)
+            {
+               rank[h] = newrank;  
+            }
+        }
+   }
+   //==============================output above rating=================================
+   else if(input == 'a')
+   {
+      count = 1;
+      printf("Enter a rating:\n");
+      int irank;
+      scanf("%d",&irank);
+      printf("\n");
+      printf("ABOVE %d\n",irank);
+      int l;
+      for(l=0;l<5;l++)
+      {
+         if(rank[l] > irank)
+         {
+            printf("Player %d -- Jersey number: %d, Rating: %d\n",l+1,num[l],rank[l]); 
+         }
+      }
+      printf("\n");
+   }
+   //====================================Replace Player=========================================================
+   else if(input == 'r')
+   {
+        printf("Enter a jersey number:\n");
+        int inum;
+        scanf("%d",&inum);
+        printf("Enter a new jersey number:\n");
+        int newnum;
+        scanf("%d",&newnum);
+        printf("Enter a rating for the new player:\n");
+        int newrank;
+        scanf("%d",&newrank);
+        int m;
+        for(m=0;m<5;m++)
+        {
+            if(num[m] == inum)
+            {
+               num[m] = newnum;
+               rank[m] = newrank;
+            }
+        }
+   }else{input='q';}
+   }//while
+   return 0;
+}
