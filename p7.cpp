@@ -1,3 +1,8 @@
+//This program uses a list of integers to represent hard disk locations.
+//The various methods represent different algorityms for visiting each hard disk location
+//Those methods are: First Come first served (fcfs), shortest seek time first (sstf), look, and circular look (clook)
+//the main method simply provides an array of integers that serves as the list of hard disk locations
+
 #include<iostream>
 #include<math.h>
 #include<stdlib.h>
