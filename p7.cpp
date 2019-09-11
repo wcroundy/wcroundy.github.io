@@ -2,6 +2,7 @@
 //The various methods represent different algorityms for visiting each hard disk location
 //Those methods are: First Come first served (fcfs), shortest seek time first (sstf), look, and circular look (clook)
 //the main method simply provides an array of integers that serves as the list of hard disk locations
+//The total seek time is also printed for each method
 
 #include<iostream>
 #include<math.h>
