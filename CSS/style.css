@@ -271,6 +271,14 @@ body{
     flex: 1;
 }
 
+#ref6{
+    background-color: #555;
+    color: whitesmoke;
+    padding: 25px;
+    border:5px whitesmoke solid;
+    flex: 1;
+}
+
 /*Float references
 
 .reference{
@@ -331,6 +339,86 @@ body{
     margin-top: 200px;
     margin-bottom: 200px;
     line-height: 3em;
+}
+
+#p2button{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#p2button:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+#p7button{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#p7button:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+#p3button{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#p3button:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+#p5button{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#p5button:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
+}
+
+#p5cbutton{
+    border: none;
+    background-color: #555;
+    color: whitesmoke;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: whitesmoke;
+}
+
+#p5cbutton:hover{
+    background-color: whitesmoke;
+    color: #555;
+    border: black solid;
 }
 
 /*_________________________________Contact_________________*/
