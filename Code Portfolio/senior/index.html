@@ -1,0 +1,201 @@
+<html>
+
+   <!--Header section-->
+   <head>
+      <!--Page title-->
+      <title>Patient / Caregiver Comm System</title>
+      <!--end header section-->
+   </head>
+
+   <!--style section of the file written in CSS-->
+   <style>
+
+      /*overall settings for the page as a whole*/
+      body 
+      {
+         /*set background color and space around*/
+         background: whitesmoke;
+         padding: 5% 35%;
+      }
+
+      #LoginPage
+      {
+         width:80%;
+         margin: auto;
+      }
+
+      /*lOGIN PAGE FORMATTINGN WITH CSS*/
+      #maintitle
+      {
+         color: whitesmoke;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 30px;
+         font-weight: bolder;
+      }
+
+      #subtitle
+      {
+         color: whitesmoke;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 20px;
+         font-weight: bold;
+      }
+
+      .sr-only
+      {
+         color: whitesmoke;
+         font-family: Arial, Helvetica, sans-serif;
+         font-size: 16px;
+         font-weight: bold;
+      }
+
+      .box
+      {
+         background: #36682c;
+         padding: 20px;
+         padding-left: 30px;
+         margin: 20px 0px;
+      }
+
+      #loginButton
+      {
+         color: #36682c;
+         font-weight: bold;
+         border-color: #36682c;
+         background-color: whitesmoke;
+         height: 33px;
+      }
+      #loginButton:hover
+      {
+         color: whitesmoke;
+         font-weight: bolder;
+         background-color: #36682c;
+         border-color: whitesmoke;
+      }
+
+      #userNameInput
+      {
+         height: 30px;
+         width: 230px;
+         border-color: #36682c;
+      }
+
+
+      /*CAREGIVER CALL PAGE FORMATTING*/
+
+      /*format all divs with the 'video' class with these color settings for the area and borders*/
+      video 
+      {
+         background: black;
+         border: 1px solid whitesmoke;
+      }
+
+      /*This is the call page that appears after a user logs in*/
+      .call-page 
+      {
+         position: relative;
+         display: block;
+         margin: 0 auto;
+         width: 500px;
+         height: 500px;
+      }
+
+
+      /*This section formats the smaller local video pane*/
+      #localVideo 
+      {
+         width: 150px;
+         height: 150px;
+         position: absolute;
+         top: 15px;
+         right: 15px;
+      }
+
+      /*This section formats the larger remote video pane*/
+      #remoteVideo 
+      {
+         width: 500px;
+         height: 500px;
+      }
+
+      /*PATIENT CALL PAGE FORMATTING*/
+      /*This section formats the smaller local video pane*/
+      #localVideo2
+      {
+         width: 150px;
+         height: 150px;
+         position: absolute;
+         top: 15px;
+         right: 15px;
+      }
+
+      /*This section formats the larger remote video pane*/
+      #remoteVideo2
+      {
+         width: 500px;
+         height: 500px;
+      }
+
+
+   /*End CSS code sectino*/
+   </style>
+
+   <!--Begin body section of the page-->
+   <body>
+
+   <!--Div called loginPage, this container holds most of the elements of the page-->
+   <div id = "loginPage" class = "container text-center">
+      <!--begin the div called row-->
+      <div class = "row">
+         <!---->
+         <div class = "box">
+
+            <!--This header title at the top of the actual page-->
+            <h1 id = "maintitle">Patient / Caregiver Login.</h1>
+            <!--<h1 id = "subtitle"> Please enter Username.</h1>-->
+            <!--this is the label for the feild where users will enter their usernames-->
+            <label for = "userNameInput" class = "sr-only">Login</label>
+            <!--this labels the input that comes from the field as usernameInput, puts the placeholder "login" when no text is present-->
+            <input type = "email" id = "userNameInput" c
+               lass = "form-control formgroup" placeholder = "Username" 
+               required = "" autofocus = "">
+            <!--THis is the sign in button with an id of loginBtn-->
+            <button id = "loginButton" class = "btn btn-lg btn-primary btnblock">
+               Sign in</button>
+   <!--close the divs-->
+         </div>
+      </div>
+
+   </div>
+
+   <!--this is the div that contains hte page elements once a user has successfully signed in-->
+   <div id = "callPage" class = "call-page">
+      <!--the video pane elements are defined here-->
+      <video id = "localVideo" autoplay></video>
+      <video id = "remoteVideo" autoplay></video>
+      <!--container to hold the text box, labels and buttons below the video panes-->
+      <div class = "row text-center">
+         <div class = "col-md-12">
+            <!--Textfield element with palceholder "username to call-->
+            <input id = "callToUsernameInput" type = "text"
+               placeholder = "username to call" />
+            <!--button element to call other users-->
+            <button id = "callButton" class = "btn-success btn">Call</button>
+            <!--button element to hang up-->
+            <button id = "hangUpButton" class = "btn-danger btn">Hang Up</button>
+   <!--close the div containers-->
+         </div>
+      </div>
+
+   </div>
+
+   <!--link to our client.js file that runs the backend of the website-->
+   <script src = "client.js"></script>
+
+   <!--close the body section of the page-->
+   </body>
+
+<!--end of html file-->
+</html>
+
+
